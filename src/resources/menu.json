@@ -1,6 +1,7 @@
 {
     "items": [
         {
+            "label": "Perceivable",
             "title": "1. Perceivable",
             "href": "http://www.w3.org/TR/WCAG/#perceivable",
             "description": "Information and user interface components  must be presentable to users in ways they can perceive.",
@@ -9,132 +10,120 @@
                     "title": "1.1 Text Alternatives",
                     "href": "http://www.w3.org/TR/WCAG/#text-equiv",
                     "description": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
-                    "linkGroups": [
-                        [
-                            {
-                                "text": "1.1.1 Non-text Content",
-                                "href": "http://www.w3.org/TR/WCAG20/#text-equiv-all"
-                            }
-                        ]
+                    "links": [
+                        {
+                            "text": "1.1.1 Non-text Content",
+                            "href": "http://www.w3.org/TR/WCAG20/#text-equiv-all"
+                        }
                     ]
                 },
                 {
                     "title": "1.2 Time-based Media",
                     "href": "http://www.w3.org/TR/WCAG/#media-equiv",
                     "description": "Provide alternatives for time-based media.",
-                    "linkGroups": [
-                        [
-                            {
-                                "text": "1.2.1 Audio-only and Video-only (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"
-                            },
-                            {
-                                "text": "1.2.2 Captions (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-captions"
-                            },
-                            {
-                                "text": "1.2.3 Audio Description or Media Alternative (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc"
-                            }
-                        ],
-                        [
-                            {
-                                "text": "1.2.4 Captions (Live)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-captions"
-                            },
-                            {
-                                "text": "1.2.5 Audio Description (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"
-                            },
-                            {
-                                "text": "1.2.6 Sign Language (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-sign"
-                            }
-                        ],
-                        [
-                            {
-                                "text": "1.2.7 Extended Audio Description (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-extended-ad"
-                            },
-                            {
-                                "text": "1.2.8 Media Alternative (Prerecorded)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-text-doc"
-                            },
-                            {
-                                "text": "1.2.9 Audio-only (Live)",
-                                "href": "http://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only"
-                            }
-                        ]
+                    "links": [
+                        {
+                            "text": "1.2.1 Audio-only and Video-only (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"
+                        },
+                        {
+                            "text": "1.2.2 Captions (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-captions"
+                        },
+                        {
+                            "text": "1.2.3 Audio Description or Media Alternative (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "1.2.4 Captions (Live)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-captions"
+                        },
+                        {
+                            "text": "1.2.5 Audio Description (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"
+                        },
+                        {
+                            "text": "1.2.6 Sign Language (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-sign",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "1.2.7 Extended Audio Description (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-extended-ad"
+                        },
+                        {
+                            "text": "1.2.8 Media Alternative (Prerecorded)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-text-doc"
+                        },
+                        {
+                            "text": "1.2.9 Audio-only (Live)",
+                            "href": "http://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only"
+                        }
                     ]
                 },
                 {
                     "title": "1.3 Adaptable",
                     "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation",
                     "description": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
-                    "linkGroups": [
-                        [
-                            {
-                                "text": "1.3.1 Info and Relationships",
-                                "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"
-                            },
-                            {
-                                "text": "1.3.2 Meaningful Sequence",
-                                "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"
-                            },
-                            {
-                                "text": "1.3.3 Sensory Characteristics",
-                                "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"
-                            }
-                        ]
+                    "links": [
+                        {
+                            "text": "1.3.1 Info and Relationships",
+                            "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"
+                        },
+                        {
+                            "text": "1.3.2 Meaningful Sequence",
+                            "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"
+                        },
+                        {
+                            "text": "1.3.3 Sensory Characteristics",
+                            "href": "http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"
+                        }
                     ]
                 },
                 {
                     "title": "1.4 Distinguishable",
                     "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast",
                     "description": "Make it easier for users to see and hear content including separating foreground from background.",
-                    "linkGroups": [
-                        [
-                            {
-                                "text": "1.4.1 Use of Color",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"
-                            },
-                            {
-                                "text": "1.4.2 Audio Control",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio"
-                            }
-                        ],
-                        [
-                            {
-                                "text": "1.4.3 Contrast (Minimum)",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"
-                            },
-                            {
-                                "text": "1.4.4 Resize Text",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"
-                            },
-                            {
-                                "text": "1.4.5 Images of Text",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation"
-                            }
-                        ],
-                        [
-                            {
-                                "text": "1.4.6 Contrast (Enhanced)",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast7"
-                            },
-                            {
-                                "text": "1.4.7 Low or No Background Audio",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio"
-                            },
-                            {
-                                "text": "1.4.8 Visual Presentation",
-                                "href": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation"
-                            },
-                            {
-                                "text": "1.4.9 Images of Text (No Exception)",
-                                "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-images"
-                            }
-                        ]
+                    "links": [
+                        {
+                            "text": "1.4.1 Use of Color",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"
+                        },
+                        {
+                            "text": "1.4.2 Audio Control",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "1.4.3 Contrast (Minimum)",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"
+                        },
+                        {
+                            "text": "1.4.4 Resize Text",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"
+                        },
+                        {
+                            "text": "1.4.5 Images of Text",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "1.4.6 Contrast (Enhanced)",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast7"
+                        },
+                        {
+                            "text": "1.4.7 Low or No Background Audio",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio"
+                        },
+                        {
+                            "text": "1.4.8 Visual Presentation",
+                            "href": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation"
+                        },
+                        {
+                            "text": "1.4.9 Images of Text (No Exception)",
+                            "href": "http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-images"
+                        }
                     ]
                 }
             ]
