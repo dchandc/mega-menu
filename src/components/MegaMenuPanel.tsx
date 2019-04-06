@@ -4,13 +4,17 @@ import { IMegaMenuPanel } from '../interfaces';
 import MenuPanelSection from './MenuPanelSection';
 import '../styles/MegaMenuPanel.scss';
 
-const MegaMenuPanel = ({
+interface IMegaMenuPanelProps extends IMegaMenuPanel {
+  open?: boolean;
+}
+
+const MegaMenuPanel: React.FC<IMegaMenuPanelProps> = ({
   href,
   description,
   open,
   sections,
   title
-}: IMegaMenuPanel & { open?: boolean }) => (
+}: IMegaMenuPanelProps) => (
   <div
     aria-expanded={open}
     aria-hidden={!open}

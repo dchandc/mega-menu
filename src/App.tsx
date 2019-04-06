@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MegaMenu from './components/MegaMenu';
 import menuData from './resources/menu.json';
 import './styles/App.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <MegaMenu {...menuData} />
-    );
-  }
-}
+const App: React.FunctionComponent = () => (
+  <>
+    <MegaMenu {...menuData} />
+    {/* TODO: add some background here */}
+  </>
+);
 
 export default App;

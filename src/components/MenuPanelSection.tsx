@@ -2,7 +2,7 @@ import React from 'react';
 import { IMegaMenuPanelSection } from '../interfaces';
 import MenuLink from './MegaMenuLink';
 
-const MegaMenuPanelSection = ({
+const MegaMenuPanelSection: React.FC<IMegaMenuPanelSection> = ({
   description,
   href,
   links,

@@ -4,8 +4,13 @@ import { IMegaMenuItem } from '../interfaces';
 import MegaMenuPanel from './MegaMenuPanel';
 import '../styles/MegaMenuItem.scss';
 
-const MegaMenuItem = (
-  item: IMegaMenuItem & { clickHandler: any; open?: boolean }
+interface IMegaMenuItemProps extends IMegaMenuItem {
+  clickHandler?: any;
+  open?: boolean;
+}
+
+const MegaMenuItem: React.FC<IMegaMenuItemProps> = (
+  item: IMegaMenuItemProps,
 ) => {
   const { clickHandler, label, ...panelProps } = item;
 

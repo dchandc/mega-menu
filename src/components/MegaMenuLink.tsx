@@ -1,7 +1,7 @@
 import React from 'react';
 import { IMegaMenuLink } from '../interfaces';
 
-const MegaMenuLink = ({
+const MegaMenuLink: React.FC<IMegaMenuLink> = ({
   hasSeparator,
   href,
   text,

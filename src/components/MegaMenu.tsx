@@ -3,13 +3,13 @@ import { IMegaMenuData } from '../interfaces';
 import '../styles/MegaMenu.scss';
 import MegaMenuItem from './MegaMenuItem';
 
-const MegaMenu = (data: IMegaMenuData) => {
+const MegaMenu: React.FC<IMegaMenuData> = (data: IMegaMenuData) => {
   const [openIndex, setOpenIndex] = useState(-1);
   const [buttonPressed, setButtonPress] = useState(false);
   const menuRef = useRef(null);
   const { items } = data;
 
-  const childClickHandler = (index: number) => (e: Event) => {
+  const itemClickHandler = (index: number) => (e: Event) => {
     e.preventDefault();
     setOpenIndex(openIndex === index ? -1 : index);
   };
@@ -43,7 +43,7 @@ const MegaMenu = (data: IMegaMenuData) => {
         {items.map((item, index) => (
           <li key={item.label}>
             <MegaMenuItem
-              clickHandler={childClickHandler(index)}
+              clickHandler={itemClickHandler(index)}
               open={openIndex === index}
               {...item}
             />
