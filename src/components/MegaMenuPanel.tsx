@@ -4,7 +4,7 @@ import { IMegaMenuPanel } from '../interfaces';
 import MenuPanelSection from './MenuPanelSection';
 import '../styles/MegaMenuPanel.scss';
 
-const MenuPanel = ({
+const MegaMenuPanel = ({
   href,
   description,
   open,
@@ -30,4 +30,4 @@ const MenuPanel = ({
   </div>
 );
 
-export default MenuPanel;
+export default MegaMenuPanel;

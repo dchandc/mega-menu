@@ -1,15 +1,36 @@
-import React, { useState } from "react";
-import { IMegaMenuData } from "../interfaces";
-import "../styles/MegaMenu.scss";
-import MenuItem from "./MegaMenuItem";
+import React, { useEffect, useRef, useState } from 'react';
+import { IMegaMenuData } from '../interfaces';
+import '../styles/MegaMenu.scss';
+import MegaMenuItem from './MegaMenuItem';
 
 const MegaMenu = (data: IMegaMenuData) => {
-  const { items } = data;
   const [openIndex, setOpenIndex] = useState(-1);
   const [buttonPressed, setButtonPress] = useState(false);
+  const menuRef = useRef(null);
+  const { items } = data;
+
+  const childClickHandler = (index: number) => (e: Event) => {
+    e.preventDefault();
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
+
+  const clickListener = (e: Event) => {
+    const menuElement: any = menuRef.current;
+    if (menuElement && !menuElement.contains(e.target) && openIndex != -1) {
+      setOpenIndex(-1);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', clickListener);
+
+    return () => {
+      document.removeEventListener('click', clickListener);
+    };
+  });
 
   return (
-    <nav className="megamenu" role="navigation">
+    <nav className="megamenu" role="navigation" ref={menuRef}>
       <button
         aria-expanded={buttonPressed}
         aria-pressed={buttonPressed}
@@ -20,8 +41,12 @@ const MegaMenu = (data: IMegaMenuData) => {
       </button>
       <ol className="megamenu-list">
         {items.map((item, index) => (
-          <li key={item.label} onClick={() => setOpenIndex(openIndex === index ? -1 : index)}>
-            <MenuItem open={openIndex === index} {...item} />
+          <li key={item.label}>
+            <MegaMenuItem
+              clickHandler={childClickHandler(index)}
+              open={openIndex === index}
+              {...item}
+            />
           </li>
         ))}
       </ol>

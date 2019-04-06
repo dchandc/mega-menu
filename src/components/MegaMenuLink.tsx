@@ -1,7 +1,7 @@
 import React from 'react';
 import { IMegaMenuLink } from '../interfaces';
 
-const MenuLink = ({
+const MegaMenuLink = ({
   hasSeparator,
   href,
   text,
@@ -14,4 +14,4 @@ const MenuLink = ({
   </>
 );
 
-export default MenuLink;
+export default MegaMenuLink;

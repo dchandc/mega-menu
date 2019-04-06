@@ -2,7 +2,7 @@ import React from 'react';
 import { IMegaMenuPanelSection } from '../interfaces';
 import MenuLink from './MegaMenuLink';
 
-const MenuPanelSection = ({
+const MegaMenuPanelSection = ({
   description,
   href,
   links,
@@ -31,4 +31,4 @@ const MenuPanelSection = ({
   );
 }
 
-export default MenuPanelSection;
+export default MegaMenuPanelSection;
