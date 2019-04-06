@@ -127,6 +127,254 @@
                     ]
                 }
             ]
+        },
+        {
+            "label": "Operable",
+            "title": "2. Operable",
+            "href": "http://www.w3.org/TR/WCAG/#operable",
+            "description": "User interface components and navigation must be operable.",
+            "sections": [
+                {
+                    "title": "2.1 Keyboard Accessible",
+                    "href": "http://www.w3.org/TR/WCAG20/#keyboard-operation",
+                    "description": "Make all functionality available from a keyboard.",
+                    "links": [
+                        {
+                            "text": "2.1.1 Keyboard",
+                            "href": "http://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
+                        },
+                        {
+                            "text": "2.1.2 No Keyboard Trap",
+                            "href": "http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "2.1.3 Keyboard (No Exception)",
+                            "href": "http://www.w3.org/TR/WCAG20/#keyboard-operation-all-funcs"
+                        }
+                    ]
+                },
+                {
+                    "title": "2.2 Enough Time",
+                    "href": "http://www.w3.org/TR/WCAG20/#time-limits",
+                    "description": "Provide users enough time to read and use content.",
+                    "links": [
+                        {
+                            "text": "2.2.1 Timing Adjustable",
+                            "href": "http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors"
+                        },
+                        {
+                            "text": "2.2.2 Pause, Stop, Hide",
+                            "href": "http://www.w3.org/TR/WCAG20/#time-limits-pause",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "2.2.3 Interruptions",
+                            "href": "http://www.w3.org/TR/WCAG20/#time-limits-no-exceptions"
+                        },
+                        {
+                            "text": "2.2.4 Interruptions",
+                            "href": "http://www.w3.org/TR/WCAG20/#time-limits-postponed"
+                        },
+                        {
+                            "text": "2.2.5 Re-authenticating",
+                            "href": "http://www.w3.org/TR/WCAG20/#time-limits-server-timeout"
+                        }
+                    ]
+                },
+                {
+                    "title": "2.3 Seizures",
+                    "href": "http://www.w3.org/TR/WCAG20/#seizure",
+                    "description": "Do not design content in a way that is known to cause seizures.",
+                    "links": [
+                        {
+                            "text": "2.3.1 Three Flashes or Below Threshold",
+                            "href": "http://www.w3.org/TR/WCAG20/#seizure-does-not-violate",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "2.3.2 Three Flashes",
+                            "href": "http://www.w3.org/TR/WCAG20/#seizure-three-times"
+                        }
+                    ]
+                },
+                {
+                    "title": "2.4 Navigable",
+                    "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms",
+                    "description": "Provide ways to help users navigate, find content, and determine where they are.",
+                    "links": [
+                        {
+                            "text": "2.4.1 Bypass Blocks",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip"
+                        },
+                        {
+                            "text": "2.4.2 Page Titled",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title"
+                        },
+                        {
+                            "text": "2.4.3 Focus Order",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order"
+                        },
+                        {
+                            "text": "2.4.4 Link Purpose (In Context)",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "2.4.5 Multiple Ways",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc"
+                        },
+                        {
+                            "text": "2.4.6 Headings and Labels",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"
+                        },
+                        {
+                            "text": "2.4.7 Focus Visible",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "2.4.8 Location",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-location"
+                        },
+                        {
+                            "text": "2.4.9 Link Purpose (Link Only)",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link"
+                        },
+                        {
+                            "text": "2.4.10 Section Headings",
+                            "href": "http://www.w3.org/TR/WCAG20/#navigation-mechanisms-headings"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Understandable",
+            "title": "3. Understandable",
+            "href": "http://www.w3.org/TR/WCAG/#understandable",
+            "description": "Information and the operation of user interface must be understandable.",
+            "sections": [
+                {
+                    "title": "3.1 Readable",
+                    "href": "http://www.w3.org/TR/WCAG20/#meaning",
+                    "description": "Make text content readable and understandable.",
+                    "links": [
+                        {
+                            "text": "3.1.1 Language of Page",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.1.2 Language of Parts",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-other-lang-id",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.1.3 Unusual Words",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-idioms"
+                        },
+                        {
+                            "text": "3.1.4 Abbreviations",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-located"
+                        },
+                        {
+                            "text": "3.1.5 Reading Level",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-supplements"
+                        },
+                        {
+                            "text": "3.1.6 Pronunciation",
+                            "href": "http://www.w3.org/TR/WCAG20/#meaning-pronunciation"
+                        }
+                    ]
+                },
+                {
+                    "title": "3.2 Predictable",
+                    "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior",
+                    "description": "Make Web pages appear and operate in predictable ways.",
+                    "links": [
+                        {
+                            "text": "3.2.1 On Focus",
+                            "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"
+                        },
+                        {
+                            "text": "3.2.2 On Input",
+                            "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.2.3 Consistent Navigation",
+                            "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.2.4 Consistent Identification",
+                            "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.2.5 Change on Request",
+                            "href": "http://www.w3.org/TR/WCAG20/#consistent-behavior-no-extreme-changes-context"
+                        }
+                    ]
+                },
+                {
+                    "title": "3.3 Input Assistance",
+                    "href": "http://www.w3.org/TR/WCAG20/#minimize-error",
+                    "description": "Help users avoid and correct mistakes.",
+                    "links": [
+                        {
+                            "text": "3.3.1 Error Identification",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-identified"
+                        },
+                        {
+                            "text": "3.3.2 Labels or Instructions",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-cues",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.3.3 Error Suggestion",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-suggestions"
+                        },
+                        {
+                            "text": "3.3.4 Error Prevention (Legal, Financial, Data)",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-reversible",
+                            "hasSeparator": true
+                        },
+                        {
+                            "text": "3.3.5 Help",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-context-help"
+                        },
+                        {
+                            "text": "3.3.6 Error Prevention (All)",
+                            "href": "http://www.w3.org/TR/WCAG20/#minimize-error-reversible-all"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Robust",
+            "title": "4. Robust",
+            "href": "http://www.w3.org/TR/WCAG/#robust",
+            "description": "Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.",
+            "sections": [
+                {
+                    "title": "4.1 Compatible",
+                    "href": "http://www.w3.org/TR/WCAG20/#ensure-compat",
+                    "description": "Maximize compatibility with current and future user agents, including assistive technologies.",
+                    "links": [
+                        {
+                            "text": "4.1.1 Parsing",
+                            "href": "http://www.w3.org/TR/WCAG20/#ensure-compat-parses"
+                        },
+                        {
+                            "text": "4.1.2 Name, Role, Value",
+                            "href": "http://www.w3.org/TR/WCAG20/#ensure-compat-rsv"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
