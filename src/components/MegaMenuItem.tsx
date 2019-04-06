@@ -15,7 +15,7 @@ const MegaMenuItem: React.FC<IMegaMenuItemProps> = (
   const { clickHandler, label, ...panelProps } = item;
 
   return (
-    <div className={classNames('megamenu-item', { open: item.open })}>
+    <div className="megamenu-item">
       <h2 className="megamenu-item-header">
         <a
           aria-expanded={item.open}

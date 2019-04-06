@@ -1,6 +1,6 @@
 import React from 'react';
 import { IMegaMenuPanelSection } from '../interfaces';
-import MenuLink from './MegaMenuLink';
+import '../styles/MegaMenuSection.scss';
 
 const MegaMenuPanelSection: React.FC<IMegaMenuPanelSection> = ({
   description,
@@ -9,7 +9,7 @@ const MegaMenuPanelSection: React.FC<IMegaMenuPanelSection> = ({
   title,
 }: IMegaMenuPanelSection) => {
   return (
-    <>
+    <div className="megamenu-section">
       <h3>
         <a href={href}>
           {title}
@@ -23,11 +23,14 @@ const MegaMenuPanelSection: React.FC<IMegaMenuPanelSection> = ({
       <ol>
         {links.map(link => (
           <li key={link.text}>
-            <MenuLink {...link} />
+            <a className="megamenu-section-link" href={href}>
+              {link.text}
+            </a>
+            {link.hasSeparator && <hr role="separator" />}
           </li>
         ))}
       </ol>
-    </>
+    </div>
   );
 }
 

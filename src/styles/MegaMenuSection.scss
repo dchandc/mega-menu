@@ -1,0 +1,40 @@
+.megamenu-section {
+  h3 > a {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding-top: .4em;
+    padding-bottom: 0;
+    color: #454545;
+    line-height: 1.1em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+
+  hr {
+    border-width: 1px 0px;
+    border-style: solid;
+    border-top-color: #b3b3b3;
+    border-top-color: rgba(0,0,0, 0.3);
+    border-bottom-color: #fff;
+  }
+
+  .megamenu-section-link {
+    display: inline-block;
+    font-size: .92em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #225FD7;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -7,10 +7,10 @@
   padding: 0 0.769em 0.769em;
   line-height: normal;
   background-color: #f5f8fa;
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f8fa),to(#e3e5e5));
-  background-image: -moz-linear-gradient(top,#f5f8fa,#e3e5e5);
-  background-image: -ms-linear-gradient(top,#f5f8fa,#e3e5e5);
-  background-image: -o-linear-gradient(top,#f5f8fa,#e3e5e5);
+  background-image: -o-linear-gradient(top, #f5f8fa ,#e3e5e5);
+  background-image: -ms-linear-gradient(top, #f5f8fa ,#e3e5e5);
+  background-image: -moz-linear-gradient(top, #f5f8fa, #e3e5e5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f8fa), to(#e3e5e5));
   cursor: default;
   -webkit-box-shadow: 0 4px 6px -2px rgba(0,0,0,.5), inset 1px 1px 0 #fff;
   -moz-box-shadow: 0 4px 6px -2px -moz-rgba(0,0,0,.5), inset 1px 1px 0 #fff;
@@ -42,5 +42,35 @@
     -ms-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
     -o-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
     transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+  }
+
+  h2 > a {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: .8em;
+    padding-bottom: 0;
+    color: #454545;
+    line-height: 1.4em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+
+  p {
+    color: #454545;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin: 0 0 22px;
+  }
+
+  > ol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }

@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import { IMegaMenuPanel } from '../interfaces';
-import MenuPanelSection from './MenuPanelSection';
+import MegaMenuSection from './MegaMenuSection';
 import '../styles/MegaMenuPanel.scss';
 
 interface IMegaMenuPanelProps extends IMegaMenuPanel {
@@ -27,7 +27,7 @@ const MegaMenuPanel: React.FC<IMegaMenuPanelProps> = ({
     <ol>
       {sections.map(section => (
         <li key={section.title}>
-          <MenuPanelSection {...section} />
+          <MegaMenuSection {...section} />
         </li>
       ))}
     </ol>
