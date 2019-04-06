@@ -22,7 +22,7 @@ const MenuPanelSection = ({
       )}
       <ol>
         {links.map(link => (
-          <li>
+          <li key={link.text}>
             <MenuLink {...link} />
           </li>
         ))}
