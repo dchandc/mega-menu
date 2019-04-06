@@ -1,0 +1,46 @@
+.megamenu-panel {
+  position: absolute;
+  display: block;
+  left: -1px;
+  color: #454545;
+  margin: 0;
+  padding: 0 0.769em 0.769em;
+  line-height: normal;
+  background-color: #f5f8fa;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f8fa),to(#e3e5e5));
+  background-image: -moz-linear-gradient(top,#f5f8fa,#e3e5e5);
+  background-image: -ms-linear-gradient(top,#f5f8fa,#e3e5e5);
+  background-image: -o-linear-gradient(top,#f5f8fa,#e3e5e5);
+  cursor: default;
+  -webkit-box-shadow: 0 4px 6px -2px rgba(0,0,0,.5), inset 1px 1px 0 #fff;
+  -moz-box-shadow: 0 4px 6px -2px -moz-rgba(0,0,0,.5), inset 1px 1px 0 #fff;
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,.5), inset 1px 1px 0 #fff;
+  visibility: hidden;
+  top: -9999em;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+  -moz-transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+  -ms-transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+  -o-transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+  transition: opacity 250ms ease 250ms, max-height 500ms ease, visibility 0s linear 500ms, top 0s linear 500ms;
+  border: 1px solid #b3b3b3;
+  border-color: rgba(0,0,0,0.3);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  &.open {
+    visibility: visible;
+    top: 3em;
+    max-height: 600px;
+    opacity: 1;
+    z-index: 1001;
+    -webkit-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+    -moz-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+    -ms-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+    -o-transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+    transition: opacity 250ms ease, max-height 500ms ease, visibility 0s linear 0s, top 0s linear 0s;
+  }
+}

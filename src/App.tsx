@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import MegaMenu from './MegaMenu';
+import MegaMenu from './components/MegaMenu';
 import menuData from './resources/menu.json';
+import './styles/App.scss';
 
 class App extends Component {
   render() {

@@ -1,7 +1,8 @@
-import classNames from "classnames";
-import React from "react";
-import { IMenuPanel } from "./interfaces";
-import MenuPanelSection from "./MenuPanelSection";
+import classNames from 'classnames';
+import React from 'react';
+import { IMegaMenuPanel } from '../interfaces';
+import MenuPanelSection from './MenuPanelSection';
+import '../styles/MegaMenuPanel.scss';
 
 const MenuPanel = ({
   href,
@@ -9,11 +10,11 @@ const MenuPanel = ({
   open,
   sections,
   title
-}: IMenuPanel & { open?: boolean }) => (
+}: IMegaMenuPanel & { open?: boolean }) => (
   <div
     aria-expanded={open}
     aria-hidden={!open}
-    className={classNames({ open: open })}
+    className={classNames('megamenu-panel', { open: open })}
   >
     <h2>
       <a href={href}>{title}</a>

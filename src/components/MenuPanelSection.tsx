@@ -1,13 +1,13 @@
 import React from 'react';
-import { IMenuPanelSection } from './interfaces';
-import MenuLink from './MenuLink';
+import { IMegaMenuPanelSection } from '../interfaces';
+import MenuLink from './MegaMenuLink';
 
 const MenuPanelSection = ({
   description,
   href,
   links,
   title,
-}: IMenuPanelSection) => {
+}: IMegaMenuPanelSection) => {
   return (
     <>
       <h3>

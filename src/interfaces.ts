@@ -1,26 +1,26 @@
-export interface IMenuData {
-    items: IMenuItem[];
+export interface IMegaMenuData {
+    items: IMegaMenuItem[];
 }
 
-export interface IMenuItem extends IMenuPanel {
+export interface IMegaMenuItem extends IMegaMenuPanel {
     label: string;
 }
 
-export interface IMenuPanel {
+export interface IMegaMenuPanel {
     description?: string;
     href: string;
-    sections: IMenuPanelSection[];
+    sections: IMegaMenuPanelSection[];
     title: string;
 }
 
-export interface IMenuPanelSection {
+export interface IMegaMenuPanelSection {
     description?: string;
     href: string;
-    links: IMenuLink[];
+    links: IMegaMenuLink[];
     title: string;
 }
 
-export interface IMenuLink {
+export interface IMegaMenuLink {
     href: string;
     hasSeparator?: boolean;
     text: string;

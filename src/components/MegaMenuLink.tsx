@@ -1,11 +1,11 @@
 import React from 'react';
-import { IMenuLink } from './interfaces';
+import { IMegaMenuLink } from '../interfaces';
 
 const MenuLink = ({
   hasSeparator,
   href,
   text,
-}: IMenuLink) => (
+}: IMegaMenuLink) => (
   <>
     <a href={href}>
       {text}
