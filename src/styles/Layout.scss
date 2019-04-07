@@ -1,0 +1,18 @@
+@import 'variables';
+
+.layout {
+  height: 1200px;
+  background-color: #000;
+}
+
+.container {
+  position: absolute;
+  max-width: 900px;
+  width: calc(100% - 50px);
+  padding: 0 25px;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+    padding: 0;
+  }
+}
