@@ -24,7 +24,7 @@ const MegaMenuPanel: React.FC<IMegaMenuPanelProps> = ({
       <a href={href}>{title}</a>
     </h2>
     {description && <p>{description}</p>}
-    <ol>
+    <ol className={`megamenu-sections-${sections.length}`}>
       {sections.map(section => (
         <li key={section.title}>
           <MegaMenuSection {...section} />

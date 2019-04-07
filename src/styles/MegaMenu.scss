@@ -1,4 +1,8 @@
+@import 'variables';
+
 .megamenu {
+  position: relative;
+
   :focus {
     outline:  2px solid rgba(34, 95, 215, 0.3);
     -moz-outline-radius: 3px;
@@ -15,8 +19,7 @@
   }
 
   ol {
-    margin: 0;
-    padding: 0;
+    padding-left: 0;
     list-style: none;
   }
 }
@@ -34,9 +37,15 @@
   height: 33px;
   cursor: pointer;
 
-  @media (max-width: 600px) {
+  @media (max-width: $mobile-breakpoint) {
     display: block;
     z-index: 3;
+
+    &[aria-expanded="false"] ~ .megamenu-list .megamenu-item {
+      height: 0;
+      overflow: hidden;
+      visibility: collapse;
+    }
   }
 }
 
@@ -54,5 +63,13 @@
   border-color: rgba(0, 0, 0, 0.3);
   border-style: solid;
   border-width: 0 1px 1px 1px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   z-index: 2;
+
+  @media (max-width: $mobile-breakpoint) {
+    height: auto;
+    padding-top: 3.077em;
+    z-index: 2;
+  }
 }

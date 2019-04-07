@@ -16,12 +16,19 @@
     }
   }
 
+  > p {
+    margin: 0 0 22px;
+  }
+
   hr {
     border-width: 1px 0px;
     border-style: solid;
     border-top-color: #b3b3b3;
     border-top-color: rgba(0,0,0, 0.3);
     border-bottom-color: #fff;
+    background: #ccc;
+    height: 1px;
+    margin: 0 0 24px;
   }
 
   .megamenu-section-link {

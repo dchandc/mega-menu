@@ -1,3 +1,11 @@
+@import 'variables';
+
 .layout {
+  max-width: 900px;
+  height: 1000px;
   padding: 0 25px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0;
+  }
 }
